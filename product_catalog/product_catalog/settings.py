@@ -7,4 +7,4 @@ except FileNotFoundError:
     config = Config()
 
 DATABASE_URL = config("DATABASE_URL", cast=Secret)
-print (DATABASE_URL)
+OPENAI_API_KEY = config("OPENAI_API_KEY", cast=Secret)
